@@ -683,6 +683,10 @@ figcaption {
   width: 70%;
 }
 
+.contact-form-wrap.hide {
+  display: none;
+}
+
 .footer-wrap {
   display: -webkit-box;
   display: -webkit-flex;
