@@ -8171,7 +8171,7 @@ figcaption {
 }
 .nng {max-width: 200px;padding: 24px;margin: 0;}
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
     .nng {
         max-width: 200px;
         padding: 24px;
