@@ -1061,7 +1061,9 @@ figcaption {
 .me {
   width: 200px;
   margin-bottom: 20px;
-  border-radius: 50%;
+  border-radius: 50% 10px 50% 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .project-tile {
