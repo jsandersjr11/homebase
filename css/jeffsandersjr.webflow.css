@@ -1907,7 +1907,7 @@ figcaption {
 
 .container-2 {
   width: 100%;
-  max-width: 940px;
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -2039,7 +2039,7 @@ figcaption {
 
 .team-circles {
   position: relative;
-  padding: 80px 30px;
+  padding: 20px 30px 40px;
   border-bottom: 1px solid #e4ebf3;
 }
 
@@ -2061,8 +2061,8 @@ figcaption {
   display: grid;
   margin-top: 50px;
   grid-auto-columns: 1fr;
-  grid-column-gap: 64px;
-  grid-row-gap: 56px;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
@@ -2074,7 +2074,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 20px 0px;
+  padding: 20px 24px 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2087,8 +2087,8 @@ figcaption {
   border-style: none;
   border-width: 1px;
   border-color: #245;
-  border-radius: 13px;
-  background-color: #f4f6f7;
+  border-radius: 11px;
+  background-color: #245;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
@@ -2105,15 +2105,19 @@ figcaption {
 
 .team-member-name {
   margin-bottom: 6px;
-  color: #152022;
+  color: #fff;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 24px;
   font-weight: 500;
+  text-align: left;
 }
 
 .team-member-position {
   margin-bottom: 24px;
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 14px;
   font-weight: 400;
+  text-align: left;
 }
 
 .h6 {
@@ -2126,6 +2130,7 @@ figcaption {
 .div-block-6 {
   width: 100px;
   height: 4px;
+  margin-right: auto;
   margin-bottom: 20px;
   background-color: #245;
 }
@@ -2632,7 +2637,7 @@ figcaption {
   margin-bottom: 20px;
   padding: 40px 30px;
   border-bottom: 1px solid #e4ebf3;
-  border-radius: 13px;
+  border-radius: 11px;
   background-color: #45485a;
 }
 
