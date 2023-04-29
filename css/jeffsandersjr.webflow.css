@@ -294,7 +294,7 @@ figcaption {
   border-width: 2px;
   border-color: #152022;
   border-radius: 4px;
-  background-color: #245;
+  background-color: #242E20;
   -webkit-transition: background-color 400ms ease, opacity 400ms ease, background-color 400ms ease;
   transition: background-color 400ms ease, opacity 400ms ease, background-color 400ms ease;
   color: #fff;
@@ -1055,8 +1055,8 @@ figcaption {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #000;
-  background-image: url('../images/dot-background.svg'), url('../images/material_branding.jpg');
+  background-color: #242E20;
+  /* background-image: url('../images/dot-background.svg'), url('../images/material_branding.jpg'); */
   background-position: 0px 0px, 0px 0px;
   background-size: auto, auto;
 }
@@ -1127,7 +1127,7 @@ figcaption {
   color: #fff;
   font-size: 64px;
   line-height: 80px;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: none;
 }
 
@@ -1829,9 +1829,9 @@ figcaption {
   padding: 12px 25px;
   border-style: solid;
   border-width: 2px;
-  border-color: #245;
+  border-color: #242E20;
   border-radius: 4px;
-  background-color: #245;
+  background-color: #242E20;
   -webkit-transition: background-color 400ms ease, opacity 400ms ease, background-color 400ms ease;
   transition: background-color 400ms ease, opacity 400ms ease, background-color 400ms ease;
   color: #fff;
@@ -1845,7 +1845,7 @@ figcaption {
 
 .button-secondary:hover {
   background-color: #fff;
-  color: #245;
+  color: #242E20;
   font-weight: 700;
 }
 
@@ -2027,7 +2027,7 @@ figcaption {
 }
 
 .gallery-image.shadow-two {
-  background-color: #245;
+  background-color: #242E20;
   outline-color: #45485a;
   outline-offset: -2px;
   outline-style: none;
@@ -2086,9 +2086,9 @@ figcaption {
   align-items: center;
   border-style: none;
   border-width: 1px;
-  border-color: #245;
+  border-color: #242E20;
   border-radius: 11px;
-  background-color: #245;
+  background-color: #242E20;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
@@ -2132,7 +2132,7 @@ figcaption {
   height: 4px;
   margin-right: auto;
   margin-bottom: 20px;
-  background-color: #245;
+  background-color: #242E20;
 }
 
 .div-block-6.line_center {
@@ -2918,7 +2918,7 @@ figcaption {
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  color: #245;
+  color: #242E20;
   font-weight: 600;
 }
 
@@ -2940,7 +2940,7 @@ figcaption {
   -ms-flex-item-align: start;
   align-self: flex-start;
   border-radius: 20px;
-  background-color: #245;
+  background-color: #242E20;
 }
 
 .team-card-process {
@@ -2960,7 +2960,7 @@ figcaption {
   align-items: center;
   border-style: none;
   border-width: 1px;
-  border-color: #245;
+  border-color: #242E20;
   border-radius: 13px;
   background-color: #f4f6f7;
   font-size: 14px;
@@ -2979,7 +2979,8 @@ figcaption {
 
 @media screen and (min-width: 1440px) {
   .banner {
-    background-image: url('../images/dot-background.svg'), url('../images/material_branding.jpg');
+    /* background-image: url('../images/dot-background.svg'), url('../images/material_branding.jpg'); */
+    background: #242E20;
     background-position: 0px 0px, 0px 0px;
     background-size: auto, auto;
   }
@@ -3318,7 +3319,7 @@ figcaption {
   }
 
   .project-section-sub-heading {
-    color: #245;
+    color: #242E20;
   }
 
   .list {
@@ -4216,7 +4217,7 @@ figcaption {
     top: 20px;
     right: 0px;
     z-index: 100;
-    background-color: #245;
+    background-color: #242E20;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   }
 
