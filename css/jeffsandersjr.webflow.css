@@ -455,7 +455,7 @@ figcaption {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template: ". . . ."
-  / 1fr 1fr 1fr 1fr;
+    / 1fr 1fr 1fr 1fr;
   margin-bottom: 140px;
 }
 
@@ -463,7 +463,7 @@ figcaption {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template: "Area Area-2 Area-3"
-  / 1fr 1fr 1fr;
+    / 1fr 1fr 1fr;
   margin-bottom: 80px;
 }
 
@@ -556,7 +556,8 @@ figcaption {
   border-color: #e3e6eb;
 }
 
-.text-field:active, .text-field:focus {
+.text-field:active,
+.text-field:focus {
   border-color: #43464d;
 }
 
@@ -673,7 +674,7 @@ figcaption {
   grid-column-gap: 80px;
   grid-row-gap: 30px;
   grid-template: ". ."
-  / 1fr 2fr;
+    / 1fr 2fr;
   align-items: center;
   margin-top: 100px;
   margin-bottom: 140px;
@@ -726,7 +727,7 @@ figcaption {
   grid-column-gap: 80px;
   grid-row-gap: 30px;
   grid-template: ". ."
-  / 1fr 1fr;
+    / 1fr 1fr;
   margin-bottom: 140px;
 }
 
@@ -735,7 +736,7 @@ figcaption {
   grid-row-gap: 20px;
   grid-template-rows: auto auto;
   grid-template-areas: ". ."
-                       ". .";
+    ". .";
   margin-bottom: 110px;
 }
 
@@ -766,7 +767,7 @@ figcaption {
   grid-row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: ". . . ."
-                       ". . . .";
+    ". . . .";
   margin-bottom: 30px;
 }
 
@@ -774,8 +775,8 @@ figcaption {
   grid-column-gap: 50px;
   grid-row-gap: 100px;
   grid-template: ". . . ."
-                 ". . . ."
-                 / 1fr 1fr 1fr 1fr;
+    ". . . ."
+    / 1fr 1fr 1fr 1fr;
   margin-top: 120px;
   margin-bottom: 135px;
 }
@@ -789,9 +790,9 @@ figcaption {
   grid-row-gap: 30px;
   border-top: 1px #ccc;
   grid-template: "Area-1 Area-2 Area-2"
-                 "Area-1 Area-3 Area-4"
-                 "Area-1 Area-5 Area-5"
-                 / 1fr 1fr 1fr;
+    "Area-1 Area-3 Area-4"
+    "Area-1 Area-5 Area-5"
+    / 1fr 1fr 1fr;
   margin-top: 120px;
   margin-bottom: 120px;
 }
@@ -1054,7 +1055,11 @@ figcaption {
   box-shadow: 0 -5px 15px rgba(0, 0, 0, .07), 0 -15px 35px rgba(50, 50, 93, .1);
 }
 
-.synthesize-lightbox, .ideate-lightbox, .prototype-lightbox, .test-lightbox, .iterate-lightbox {
+.synthesize-lightbox,
+.ideate-lightbox,
+.prototype-lightbox,
+.test-lightbox,
+.iterate-lightbox {
   justify-content: center;
   display: flex;
 }
@@ -1148,7 +1153,7 @@ figcaption {
   grid-row-gap: 16px;
   border-radius: 4px;
   grid-template: "Area Area-2"
-  / 1fr 1fr;
+    / 1fr 1fr;
   grid-auto-columns: 1fr;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -1179,7 +1184,10 @@ figcaption {
   font-weight: 500;
 }
 
-.bold-text-5, .bold-text-6, .bold-text-7, .bold-text-8 {
+.bold-text-5,
+.bold-text-6,
+.bold-text-7,
+.bold-text-8 {
   color: #fff;
 }
 
@@ -1204,7 +1212,8 @@ figcaption {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.tab-link-tab-1.process-modal---tabs, .tab-link-tab-1.process-modal---tabs:hover {
+.tab-link-tab-1.process-modal---tabs,
+.tab-link-tab-1.process-modal---tabs:hover {
   opacity: 1;
 }
 
@@ -1215,7 +1224,7 @@ figcaption {
 .grid {
   grid-column-gap: 20px;
   grid-template: "Area Area-2"
-  / 1fr 2fr;
+    / 1fr 2fr;
   padding: 20px;
 }
 
@@ -1320,7 +1329,7 @@ figcaption {
   height: 100px;
   border-radius: 30px;
   grid-template: "Area Area-2 Area-3 Area-4 Area-5 Area-6"
-  / 1fr 1fr 1fr 1fr 1fr 1fr;
+    / 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   margin-bottom: 30px;
   margin-left: 10px;
@@ -1341,8 +1350,8 @@ figcaption {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   grid-template: "Area Area"
-                 "Area-2 Area-2"
-                 / 1fr 1fr;
+    "Area-2 Area-2"
+    / 1fr 1fr;
   grid-auto-columns: 1fr;
   margin-bottom: 30px;
   display: grid;
@@ -1360,7 +1369,7 @@ figcaption {
   grid-row-gap: 16px;
   border-radius: 30px;
   grid-template: "Area Area-2 Area-3 Area-4 Area-5 Area-6"
-  / 1fr 1fr 1fr 1fr 1fr 1fr;
+    / 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: space-between;
   justify-items: stretch;
@@ -1522,7 +1531,8 @@ figcaption {
   overflow: scroll;
 }
 
-.link-block-2, .link-block-3 {
+.link-block-2,
+.link-block-3 {
   max-height: 200px;
   overflow: scroll;
 }
@@ -1782,8 +1792,8 @@ figcaption {
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   grid-template: "Area Area-2 Area-3"
-                 "Area-4 Area-5 Area-6"
-                 / 1fr 1fr 1fr;
+    "Area-4 Area-5 Area-6"
+    / 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1926,7 +1936,8 @@ figcaption {
   transition: all .2s;
 }
 
-.hero-form-input:hover, .hero-form-input:focus {
+.hero-form-input:hover,
+.hero-form-input:focus {
   border-color: #76879d;
 }
 
@@ -1955,7 +1966,6 @@ figcaption {
 
 .hero-subscribe-left {
   background-color: #242e20;
-  border-bottom: 1px solid #e4ebf3;
   padding: 60px 30px 80px;
   position: relative;
 }
@@ -2357,7 +2367,9 @@ figcaption {
   border-radius: 8px;
 }
 
-.products3-small-image-wrap.products3-small-image3, .products3-small-image-wrap.products3-small-image1, .products3-small-image-wrap.products3-small-image2 {
+.products3-small-image-wrap.products3-small-image3,
+.products3-small-image-wrap.products3-small-image1,
+.products3-small-image-wrap.products3-small-image2 {
   height: 140px;
   background-image: none;
 }
@@ -2376,9 +2388,9 @@ figcaption {
   grid-row-gap: 30px;
   border-top: 1px solid #ccc;
   grid-template: "Area-1 Area-2 Area-2"
-                 "Area-1 Area-2 Area-2"
-                 "Area-1 Area-2 Area-2"
-                 / 1fr 1fr 1fr;
+    "Area-1 Area-2 Area-2"
+    "Area-1 Area-2 Area-2"
+    / 1fr 1fr 1fr;
   margin-top: 120px;
   margin-bottom: 120px;
 }
@@ -2388,9 +2400,9 @@ figcaption {
   grid-row-gap: 30px;
   border-top: 1px #ccc;
   grid-template: "Area-1 Area-2 Area-2"
-                 "Area-1 Area-3 Area-4"
-                 "Area-1 Area-5 Area-5"
-                 / 1fr 1fr 1fr;
+    "Area-1 Area-3 Area-4"
+    "Area-1 Area-5 Area-5"
+    / 1fr 1fr 1fr;
   margin-top: 20px;
   margin-bottom: 0;
 }
@@ -2415,7 +2427,7 @@ figcaption {
 .grid-2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "Area Area-2 Area-3 Area-4"
-                       "Area-5 Area-6 Area-7 .";
+    "Area-5 Area-6 Area-7 .";
 }
 
 .step.team-card-process {
@@ -2496,7 +2508,6 @@ figcaption {
 
 .projects {
   background-color: #242e20;
-  border-bottom: 1px solid #e4ebf3;
   padding: 20px 30px 100px;
   position: relative;
 }
@@ -2580,9 +2591,9 @@ figcaption {
   grid-row-gap: 30px;
   border-top: 1px #ccc;
   grid-template: "Area-1 Area-2 Area-2"
-                 "Area-1 Area-3 Area-4"
-                 "Area-1 Area-5 Area-6"
-                 / 1fr 1fr 1fr;
+    "Area-1 Area-3 Area-4"
+    "Area-1 Area-5 Area-6"
+    / 1fr 1fr 1fr;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -2592,12 +2603,12 @@ figcaption {
   grid-row-gap: 30px;
   border-top: 1px #ccc;
   grid-template: "Area-1 Area-2 Area-2"
-                 "Area-1 Area-3 Area-4"
-                 "Area-1 Area-5 Area-6"
-                 "Area-1 Area-7 Area-8"
-                 "Area-1 Area-9 Area-10"
-                 "Area-1 Area-11 Area-12"
-                 / 1fr 1fr 1fr;
+    "Area-1 Area-3 Area-4"
+    "Area-1 Area-5 Area-6"
+    "Area-1 Area-7 Area-8"
+    "Area-1 Area-9 Area-10"
+    "Area-1 Area-11 Area-12"
+    / 1fr 1fr 1fr;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -2739,7 +2750,10 @@ figcaption {
   color: #fff;
 }
 
-.div-block-12, .div-block-13, .div-block-14, .div-block-15 {
+.div-block-12,
+.div-block-13,
+.div-block-14,
+.div-block-15 {
   width: 100px;
   height: 4px;
   background-color: #e1f4cb;
@@ -2930,8 +2944,8 @@ figcaption {
 
   .work-experience-grid {
     grid-template: ". ."
-                   ". ."
-                   / 1fr 1fr;
+      ". ."
+      / 1fr 1fr;
   }
 
   .works-grid {
@@ -2958,7 +2972,8 @@ figcaption {
     padding: 30px 50px 40px;
   }
 
-  .contact-headline, .contact-form-wrap {
+  .contact-headline,
+  .contact-form-wrap {
     width: 100%;
   }
 
@@ -2966,8 +2981,8 @@ figcaption {
     grid-row-gap: 50px;
     text-align: center;
     grid-template: "."
-                   "."
-                   / 1fr;
+      "."
+      / 1fr;
   }
 
   .about-head-text-wrap {
@@ -2988,8 +3003,8 @@ figcaption {
   .services-items-grid {
     grid-row-gap: 0px;
     grid-template: "."
-                   "."
-                   / 1fr;
+      "."
+      / 1fr;
     padding-top: 0;
   }
 
@@ -2998,8 +3013,8 @@ figcaption {
     grid-row-gap: 50px;
     text-align: center;
     grid-template: "."
-                   "."
-                   / 1fr;
+      "."
+      / 1fr;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3008,10 +3023,10 @@ figcaption {
     width: 80%;
     text-align: center;
     grid-template: "."
-                   "."
-                   "."
-                   "."
-                   / 1fr;
+      "."
+      "."
+      "."
+      / 1fr;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3025,10 +3040,10 @@ figcaption {
 
   .social-media-grid {
     grid-template: ". ."
-                   ". ."
-                   ". ."
-                   ". ."
-                   / 1fr 1fr;
+      ". ."
+      ". ."
+      ". ."
+      / 1fr 1fr;
   }
 
   .project-overview-grid {
@@ -3036,9 +3051,9 @@ figcaption {
     grid-row-gap: 50px;
     text-align: center;
     grid-template: "."
-                   "."
-                   "."
-                   / 1fr;
+      "."
+      "."
+      / 1fr;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3049,8 +3064,8 @@ figcaption {
     grid-row-gap: 0px;
     text-align: center;
     grid-template: "Area-1 Area-1"
-                   "Area-2 Area-2"
-                   / 1fr 1fr;
+      "Area-2 Area-2"
+      / 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3159,7 +3174,7 @@ figcaption {
   .grid {
     grid-template-rows: auto auto;
     grid-template-areas: ". Area"
-                         ". Area-2";
+      ". Area-2";
   }
 
   .process-modal-title {
@@ -3173,14 +3188,14 @@ figcaption {
 
   .tabs {
     grid-template-areas: "Area Area"
-                         "Area-2 Area-2";
+      "Area-2 Area-2";
   }
 
   .process-modal---tabs-parent {
     z-index: 200;
     grid-template: "Area Area-2 Area-3 Area-4 Area-5"
-                   "Area-6 . . . ."
-                   / 1fr 1fr 1fr 1fr 1fr;
+      "Area-6 . . . ."
+      / 1fr 1fr 1fr 1fr 1fr;
   }
 
   .tabs-content {
@@ -3221,9 +3236,9 @@ figcaption {
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     grid-template: "Area Area-2"
-                   "Area-3 Area-4"
-                   "Area-5 Area-6" 1fr
-                   / 1fr 1fr;
+      "Area-3 Area-4"
+      "Area-5 Area-6" 1fr
+      / 1fr 1fr;
   }
 
   .team-member-image {
@@ -3323,8 +3338,8 @@ figcaption {
     grid-row-gap: 0px;
     text-align: center;
     grid-template: "Area-1 Area-1"
-                   "Area-2 Area-2"
-                   / 1fr 1fr;
+      "Area-2 Area-2"
+      / 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3335,9 +3350,9 @@ figcaption {
     grid-row-gap: 0px;
     text-align: center;
     grid-template: "Area-1 Area-1"
-                   "Area-2 Area-2"
-                   "Area-3 Area-4"
-                   / 1fr 1fr;
+      "Area-2 Area-2"
+      "Area-3 Area-4"
+      / 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3347,7 +3362,10 @@ figcaption {
     font-size: 18px;
   }
 
-  .columns, .columns-2, .columns-3, .columns-4 {
+  .columns,
+  .columns-2,
+  .columns-3,
+  .columns-4 {
     margin-bottom: 20px;
   }
 
@@ -3357,10 +3375,10 @@ figcaption {
     grid-row-gap: 0px;
     text-align: center;
     grid-template: "Area-1 Area-1"
-                   "Area-2 Area-2"
-                   "Area-3 Area-4"
-                   "Area-5 Area-6"
-                   / 1fr 1fr;
+      "Area-2 Area-2"
+      "Area-3 Area-4"
+      "Area-5 Area-6"
+      / 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
   }
@@ -3371,13 +3389,13 @@ figcaption {
     grid-row-gap: 16px;
     text-align: center;
     grid-template: "Area-1 Area-1"
-                   "Area-2 Area-2"
-                   "Area-3 Area-4"
-                   "Area-5 Area-6"
-                   "Area-7 Area-8"
-                   "Area-9 Area-10"
-                   "Area-11 Area-12"
-                   / 1fr;
+      "Area-2 Area-2"
+      "Area-3 Area-4"
+      "Area-5 Area-6"
+      "Area-7 Area-8"
+      "Area-9 Area-10"
+      "Area-11 Area-12"
+      / 1fr;
     grid-auto-rows: 1fr;
     grid-auto-columns: 1fr;
     margin-left: auto;
@@ -3494,8 +3512,8 @@ figcaption {
   .works-grid {
     grid-template-rows: auto auto auto;
     grid-template-areas: "Area Area Area"
-                         "Area-2 Area-2 Area-2"
-                         "Area-3 Area-3 Area-3";
+      "Area-2 Area-2 Area-2"
+      "Area-3 Area-3 Area-3";
   }
 
   .work-position-wrap {
@@ -3519,9 +3537,9 @@ figcaption {
   .contact-form-grid {
     grid-column-gap: 30px;
     grid-template: "."
-                   "."
-                   "."
-                   / 1fr;
+      "."
+      "."
+      / 1fr;
   }
 
   .contact-form {
@@ -3563,7 +3581,8 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
-  .personal-features-grid, .social-media-heading {
+  .personal-features-grid,
+  .social-media-heading {
     width: 70%;
     max-width: 470px;
   }
@@ -3649,9 +3668,9 @@ figcaption {
 
   .process-modal---tabs-parent {
     grid-template: "Area Area-2 Area-3 Area-4"
-                   "Area-6 . . ."
-                   "Area-5 . . ."
-                   / 1fr 1fr 1fr 1fr;
+      "Area-6 . . ."
+      "Area-5 . . ."
+      / 1fr 1fr 1fr 1fr;
   }
 
   .style-guide-item.narrow {
@@ -3670,7 +3689,8 @@ figcaption {
     padding: 24px;
   }
 
-  .link-block, .link-block-2 {
+  .link-block,
+  .link-block-2 {
     overflow: hidden;
   }
 
@@ -3688,7 +3708,8 @@ figcaption {
     display: block;
   }
 
-  .gallery-overview, .team-circles {
+  .gallery-overview,
+  .team-circles {
     padding: 60px 15px;
   }
 
@@ -3698,7 +3719,9 @@ figcaption {
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-subscribe-right, .hero-subscribe-left, .testimonial-slider-large {
+  .hero-subscribe-right,
+  .hero-subscribe-left,
+  .testimonial-slider-large {
     padding: 60px 15px;
   }
 
@@ -3799,13 +3822,16 @@ figcaption {
     padding: 60px 15px;
   }
 
-  .project-description, .project-description-long {
+  .project-description,
+  .project-description-long {
     width: 100%;
     margin-top: 90px;
     margin-bottom: 85px;
   }
 
-  .heading-11.white, .paragraph-light-2.white, .heading-12.white {
+  .heading-11.white,
+  .paragraph-light-2.white,
+  .heading-12.white {
     text-align: left;
   }
 }
@@ -3852,7 +3878,8 @@ figcaption {
     padding-right: 20px;
   }
 
-  .menu-button, .menu-button.w--open {
+  .menu-button,
+  .menu-button.w--open {
     flex: none;
   }
 
@@ -3867,8 +3894,8 @@ figcaption {
   .works-grid {
     grid-template-rows: auto auto auto;
     grid-template-areas: "Area Area Area"
-                         "Area-2 Area-2 Area-2"
-                         "Area-3 Area-3 Area-3";
+      "Area-2 Area-2 Area-2"
+      "Area-3 Area-3 Area-3";
   }
 
   .contact {
@@ -3876,7 +3903,9 @@ figcaption {
     padding-right: 15px;
   }
 
-  .contact-form, .contact-form-wrap, .footer-wrap {
+  .contact-form,
+  .contact-form-wrap,
+  .footer-wrap {
     flex-direction: column;
   }
 
@@ -3891,7 +3920,10 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
-  .personal-features-grid, .social-media-heading, .project-overview-grid, .project-description-grid {
+  .personal-features-grid,
+  .social-media-heading,
+  .project-overview-grid,
+  .project-description-grid {
     width: 100%;
     max-width: none;
   }
@@ -3956,7 +3988,8 @@ figcaption {
     flex-direction: column;
   }
 
-  .heading-2, .heading-3 {
+  .heading-2,
+  .heading-3 {
     text-align: left;
   }
 
@@ -3977,7 +4010,7 @@ figcaption {
   .project-image-block-2-image {
     grid-template-rows: auto auto;
     grid-template-areas: "Area Area"
-                         "Area-2 Area-2";
+      "Area-2 Area-2";
   }
 
   .grid {
@@ -4003,7 +4036,7 @@ figcaption {
   .tabs {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "Area Area-2 Area-2"
-                         "Area Area-2 Area-2";
+      "Area Area-2 Area-2";
     justify-content: center;
     justify-items: center;
     position: absolute;
@@ -4016,15 +4049,16 @@ figcaption {
 
   .process-modal---tabs-parent {
     grid-template: "Area Area-2"
-                   "Area-3 Area-4"
-                   "Area-5 Area-6"
-                   ". ."
-                   / .5fr .5fr;
+      "Area-3 Area-4"
+      "Area-5 Area-6"
+      ". ."
+      / .5fr .5fr;
     justify-content: start;
     justify-items: center;
   }
 
-  .tabs-page, .process-modal-master {
+  .tabs-page,
+  .process-modal-master {
     display: none;
   }
 
@@ -4096,7 +4130,8 @@ figcaption {
     margin-right: auto;
   }
 
-  .button-primary.projecttwobutton, .button-primary.projectthreebutton {
+  .button-primary.projecttwobutton,
+  .button-primary.projectthreebutton {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -4113,12 +4148,12 @@ figcaption {
 
   .team-grid {
     grid-template: "Area"
-                   "Area-2"
-                   "Area-3" 1fr
-                   "Area-4"
-                   "Area-5"
-                   "Area-6"
-                   / 1fr;
+      "Area-2"
+      "Area-3" 1fr
+      "Area-4"
+      "Area-5"
+      "Area-6"
+      / 1fr;
   }
 
   .margin-bottom-24px {
@@ -4213,7 +4248,8 @@ figcaption {
     text-align: left;
   }
 
-  .project-description-grid-overview, .project-description-grid-marketplace {
+  .project-description-grid-overview,
+  .project-description-grid-marketplace {
     width: 100%;
     max-width: none;
   }
@@ -4224,16 +4260,20 @@ figcaption {
 
   .grid-2 {
     grid-template: "Area"
-                   "Area-2"
-                   "Area-3"
-                   "Area-4"
-                   "Area-5"
-                   "Area-6"
-                   "Area-7"
-                   / 1fr;
+      "Area-2"
+      "Area-3"
+      "Area-4"
+      "Area-5"
+      "Area-6"
+      "Area-7"
+      / 1fr;
   }
 
-  .step_name, .step_header, .paragraph, .heading-6, .heading-7 {
+  .step_name,
+  .step_header,
+  .paragraph,
+  .heading-6,
+  .heading-7 {
     text-align: left;
   }
 
@@ -4260,12 +4300,12 @@ figcaption {
     width: 100%;
     max-width: none;
     grid-template: "Area-1"
-                   "Area-2"
-                   "Area-3"
-                   "Area-4"
-                   "Area-5"
-                   "Area-6"
-                   / 1fr;
+      "Area-2"
+      "Area-3"
+      "Area-4"
+      "Area-5"
+      "Area-6"
+      / 1fr;
   }
 
   .project-description-long {
@@ -4308,12 +4348,32 @@ figcaption {
     position: static;
   }
 
-  .white, .bold-text-10, .heading-11, .paragraph-light-2, .heading-12 {
+  .white,
+  .bold-text-10,
+  .heading-11,
+  .paragraph-light-2,
+  .heading-12 {
     text-align: left;
   }
 }
 
-#w-node-_6d017449-114a-2253-4d35-8080011249b7-eba24aa4, #w-node-b8d88035-1d27-d4bd-797e-b42385b926a9-eba24aa4, #w-node-b1e693fd-4463-c64d-22d0-c8255b5ea985-eba24aa4, #w-node-b2ed3836-64e9-503e-f04c-2d3880c415cf-eba24aa4, #w-node-_405cf0e6-812d-844e-16f8-faa8f0c85b64-eba24aa4, #w-node-_8eb71ff7-9b7b-e97a-b9cb-ec15387fa91a-eba24aa4, #w-node-_8714d534-f876-3412-b6d5-683a9e20ac5f-eba24aa4, #w-node-_12677e49-325b-a44f-30dd-7828b22974c9-eba24aa4, #w-node-bda1806c-8532-8a92-d44c-9cb757a94a5c-eba24aa4, #w-node-_9e9e012e-b754-a222-f0f4-b6387d7a96f2-eba24aa4, #w-node-_3286f2d1-c1d7-be6c-f0d1-fc7a17f53979-eba24aa4, #w-node-e62b40ec-e2a0-f572-2730-02f8b6e795ee-eba24aa4, #w-node-_5c28a81d-abf1-fa51-ada0-f44112d202ca-eba24aa4, #w-node-c176c36c-5de4-f231-992a-41567cee9a3e-eba24aa4, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd0d-eba24aa4, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd12-eba24aa4, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd17-eba24aa4 {
+#w-node-_6d017449-114a-2253-4d35-8080011249b7-eba24aa4,
+#w-node-b8d88035-1d27-d4bd-797e-b42385b926a9-eba24aa4,
+#w-node-b1e693fd-4463-c64d-22d0-c8255b5ea985-eba24aa4,
+#w-node-b2ed3836-64e9-503e-f04c-2d3880c415cf-eba24aa4,
+#w-node-_405cf0e6-812d-844e-16f8-faa8f0c85b64-eba24aa4,
+#w-node-_8eb71ff7-9b7b-e97a-b9cb-ec15387fa91a-eba24aa4,
+#w-node-_8714d534-f876-3412-b6d5-683a9e20ac5f-eba24aa4,
+#w-node-_12677e49-325b-a44f-30dd-7828b22974c9-eba24aa4,
+#w-node-bda1806c-8532-8a92-d44c-9cb757a94a5c-eba24aa4,
+#w-node-_9e9e012e-b754-a222-f0f4-b6387d7a96f2-eba24aa4,
+#w-node-_3286f2d1-c1d7-be6c-f0d1-fc7a17f53979-eba24aa4,
+#w-node-e62b40ec-e2a0-f572-2730-02f8b6e795ee-eba24aa4,
+#w-node-_5c28a81d-abf1-fa51-ada0-f44112d202ca-eba24aa4,
+#w-node-c176c36c-5de4-f231-992a-41567cee9a3e-eba24aa4,
+#w-node-_761297ed-031e-d36d-e252-9f013c3dcd0d-eba24aa4,
+#w-node-_761297ed-031e-d36d-e252-9f013c3dcd12-eba24aa4,
+#w-node-_761297ed-031e-d36d-e252-9f013c3dcd17-eba24aa4 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -4492,7 +4552,27 @@ figcaption {
   align-self: start;
 }
 
-#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38bf-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c0-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c1-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c2-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c3-a7b6c96d, #w-node-_4895d76e-2fd2-7d11-7a1e-5f032946bfba-a7b6c96d, #w-node-_3c56d334-956d-a177-6064-7512bb7d224d-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c4-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c5-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c6-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c7-a7b6c96d, #w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c8-a7b6c96d, #w-node-b85561b1-ec7d-ce95-e8e3-f3a7a91a3db2-a7b6c96d, #w-node-_281ba988-9316-a5b6-68b6-8957007810c4-a7b6c96d, #w-node-_07c25634-0006-eda6-22dd-94f8e6e83c2e-a7b6c96d, #w-node-_07c25634-0006-eda6-22dd-94f8e6e83c2f-a7b6c96d, #w-node-_07c25634-0006-eda6-22dd-94f8e6e83c30-a7b6c96d, #w-node-_07c25634-0006-eda6-22dd-94f8e6e83c31-a7b6c96d, #w-node-_07c25634-0006-eda6-22dd-94f8e6e83c32-a7b6c96d, #w-node-_2c498a22-e6d1-8ad1-84e8-9da862ff7d28-a7b6c96d, #w-node-_7d320390-f905-1087-7cb2-3560db6f60bc-a7b6c96d {
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38bf-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c0-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c1-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c2-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c3-a7b6c96d,
+#w-node-_4895d76e-2fd2-7d11-7a1e-5f032946bfba-a7b6c96d,
+#w-node-_3c56d334-956d-a177-6064-7512bb7d224d-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c4-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c5-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c6-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c7-a7b6c96d,
+#w-node-_47298b4c-9c0f-80f2-809d-c80171ca38c8-a7b6c96d,
+#w-node-b85561b1-ec7d-ce95-e8e3-f3a7a91a3db2-a7b6c96d,
+#w-node-_281ba988-9316-a5b6-68b6-8957007810c4-a7b6c96d,
+#w-node-_07c25634-0006-eda6-22dd-94f8e6e83c2e-a7b6c96d,
+#w-node-_07c25634-0006-eda6-22dd-94f8e6e83c2f-a7b6c96d,
+#w-node-_07c25634-0006-eda6-22dd-94f8e6e83c30-a7b6c96d,
+#w-node-_07c25634-0006-eda6-22dd-94f8e6e83c31-a7b6c96d,
+#w-node-_07c25634-0006-eda6-22dd-94f8e6e83c32-a7b6c96d,
+#w-node-_2c498a22-e6d1-8ad1-84e8-9da862ff7d28-a7b6c96d,
+#w-node-_7d320390-f905-1087-7cb2-3560db6f60bc-a7b6c96d {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
@@ -4591,12 +4671,31 @@ figcaption {
   align-self: start;
 }
 
-#w-node-_6d017449-114a-2253-4d35-8080011249b7-8203b6bf, #w-node-b8d88035-1d27-d4bd-797e-b42385b926a9-8203b6bf, #w-node-b1e693fd-4463-c64d-22d0-c8255b5ea985-8203b6bf, #w-node-b2ed3836-64e9-503e-f04c-2d3880c415cf-8203b6bf, #w-node-_8eb71ff7-9b7b-e97a-b9cb-ec15387fa91a-8203b6bf, #w-node-_8714d534-f876-3412-b6d5-683a9e20ac5f-8203b6bf, #w-node-_12677e49-325b-a44f-30dd-7828b22974c9-8203b6bf, #w-node-bda1806c-8532-8a92-d44c-9cb757a94a5c-8203b6bf, #w-node-_9e9e012e-b754-a222-f0f4-b6387d7a96f2-8203b6bf, #w-node-_3286f2d1-c1d7-be6c-f0d1-fc7a17f53979-8203b6bf, #w-node-e62b40ec-e2a0-f572-2730-02f8b6e795ee-8203b6bf, #w-node-_5c28a81d-abf1-fa51-ada0-f44112d202ca-8203b6bf, #w-node-c176c36c-5de4-f231-992a-41567cee9a3e-8203b6bf, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd0d-8203b6bf, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd12-8203b6bf, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd17-8203b6bf {
+#w-node-_6d017449-114a-2253-4d35-8080011249b7-8203b6bf,
+#w-node-b8d88035-1d27-d4bd-797e-b42385b926a9-8203b6bf,
+#w-node-b1e693fd-4463-c64d-22d0-c8255b5ea985-8203b6bf,
+#w-node-b2ed3836-64e9-503e-f04c-2d3880c415cf-8203b6bf,
+#w-node-_8eb71ff7-9b7b-e97a-b9cb-ec15387fa91a-8203b6bf,
+#w-node-_8714d534-f876-3412-b6d5-683a9e20ac5f-8203b6bf,
+#w-node-_12677e49-325b-a44f-30dd-7828b22974c9-8203b6bf,
+#w-node-bda1806c-8532-8a92-d44c-9cb757a94a5c-8203b6bf,
+#w-node-_9e9e012e-b754-a222-f0f4-b6387d7a96f2-8203b6bf,
+#w-node-_3286f2d1-c1d7-be6c-f0d1-fc7a17f53979-8203b6bf,
+#w-node-e62b40ec-e2a0-f572-2730-02f8b6e795ee-8203b6bf,
+#w-node-_5c28a81d-abf1-fa51-ada0-f44112d202ca-8203b6bf,
+#w-node-c176c36c-5de4-f231-992a-41567cee9a3e-8203b6bf,
+#w-node-_761297ed-031e-d36d-e252-9f013c3dcd0d-8203b6bf,
+#w-node-_761297ed-031e-d36d-e252-9f013c3dcd12-8203b6bf,
+#w-node-_761297ed-031e-d36d-e252-9f013c3dcd17-8203b6bf {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 @media screen and (min-width: 1440px) {
-  #w-node-_761297ed-031e-d36d-e252-9f013c3dcd12-eba24aa4, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd17-eba24aa4, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd12-8203b6bf, #w-node-_761297ed-031e-d36d-e252-9f013c3dcd17-8203b6bf {
+
+  #w-node-_761297ed-031e-d36d-e252-9f013c3dcd12-eba24aa4,
+  #w-node-_761297ed-031e-d36d-e252-9f013c3dcd17-eba24aa4,
+  #w-node-_761297ed-031e-d36d-e252-9f013c3dcd12-8203b6bf,
+  #w-node-_761297ed-031e-d36d-e252-9f013c3dcd17-8203b6bf {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
@@ -4658,9 +4757,11 @@ figcaption {
 }
 
 @media screen and (max-width: 479px) {
-  #w-node-_6f47e805-a656-cca9-b3c0-26ec58eec3d1-eba24aa4, #w-node-c176c36c-5de4-f231-992a-41567cee9a3e-eba24aa4, #w-node-_6f47e805-a656-cca9-b3c0-26ec58eec3d1-8203b6bf, #w-node-c176c36c-5de4-f231-992a-41567cee9a3e-8203b6bf {
+
+  #w-node-_6f47e805-a656-cca9-b3c0-26ec58eec3d1-eba24aa4,
+  #w-node-c176c36c-5de4-f231-992a-41567cee9a3e-eba24aa4,
+  #w-node-_6f47e805-a656-cca9-b3c0-26ec58eec3d1-8203b6bf,
+  #w-node-c176c36c-5de4-f231-992a-41567cee9a3e-8203b6bf {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
-
-

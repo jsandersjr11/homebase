@@ -1,0 +1,512 @@
+:root {
+    /* Colors */
+    --bg-color: #050505;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-highlight: rgba(255, 255, 255, 0.15);
+
+    /* Gradients */
+    --gradient-blob-1: radial-gradient(circle at 10% 20%, rgba(100, 60, 180, 0.25) 0%, transparent 40%);
+    --gradient-blob-2: radial-gradient(circle at 90% 10%, rgba(180, 80, 60, 0.2) 0%, transparent 40%);
+    --gradient-blob-3: radial-gradient(circle at 50% 60%, rgba(200, 120, 80, 0.15) 0%, transparent 50%);
+    --text-gradient: linear-gradient(90deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+
+    /* Fonts */
+    --font-main: 'Inter', 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: var(--gradient-blob-1), var(--gradient-blob-2), var(--gradient-blob-3);
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-h1,
+.heading-5,
+.heading-8,
+.heading-9,
+.heading-10 {
+    color: var(--text-primary) !important;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+p,
+.paragraph-light,
+.paragraph-tiny,
+.team-member-position {
+    color: var(--text-secondary) !important;
+}
+
+/* Hero Section */
+.banner {
+    background-color: transparent !important;
+    background-image: url('../images/header-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 180px;
+    /* More space for the large gradient header */
+    padding-bottom: 120px;
+}
+
+/* Projects Section */
+.projects,
+.wf-section {
+    background-color: transparent !important;
+}
+
+.heading-jumbo-home {
+    font-size: 5rem;
+    /* Larger, bolder */
+    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    background: none;
+    -webkit-text-fill-color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+/* Specific gradient for the "Experience-Driven" or highlighted part if we can target it, 
+   otherwise apply to specific text spans if possible. 
+   Since we can't easily target specific words without HTML changes, 
+   we'll apply the gradient to the 'white' class which seems to be used for emphasis 
+   or we can try to target the second line if it's structured that way.
+   Looking at HTML: 
+   <h2 class="heading-jumbo-home">User-Focused </h2>
+   <h2 class="heading-jumbo-home white">Experience-Driven <br></h2>
+   <h2 class="heading-jumbo-home">Design Leader</h2>
+*/
+
+.heading-jumbo-home.white {
+    background: linear-gradient(90deg, #a0c4ff 0%, #c4b5fd 50%, #fbcfe8 100%);
+    /* Blue -> Purple -> Pink */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+/* Buttons */
+.button,
+.button-primary,
+.w-button {
+    border-radius: 9999px !important;
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: var(--text-primary) !important;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    text-transform: none !important;
+    font-weight: 500 !important;
+    padding: 14px 36px !important;
+    font-size: 1rem;
+}
+
+.button:hover,
+.button-primary:hover,
+.w-button:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Navigation */
+.navigation {
+    background-color: transparent !important;
+    /* Fully transparent top */
+    backdrop-filter: none;
+    /* Remove blur for cleaner look at top, or keep subtle? Image looks clean. */
+    border-bottom: none;
+    padding-top: 20px;
+}
+
+.navigation-items {
+    max-width: 1400px;
+    /* Wider container */
+}
+
+.navigation-item {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navigation-item:hover {
+    color: #ffffff !important;
+}
+
+/* Menu Button - Circle style from image */
+.menu-button {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 48px;
+    height: 48px;
+    display: none;
+    /* Hidden on desktop */
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.menu-button.w--open {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Show menu button on mobile */
+@media screen and (max-width: 991px) {
+    .menu-button {
+        display: flex;
+    }
+
+    .navigation {
+        padding-top: 10px;
+    }
+
+    .navigation-items {
+        padding: 0 20px;
+    }
+
+    .navigation-wrap {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navigation-items.w-nav-menu {
+        background-color: rgba(5, 5, 5, 0.95) !important;
+        backdrop-filter: blur(20px);
+    }
+}
+
+.logo-image {
+    filter: brightness(0) invert(1);
+}
+
+/* Cards & Projects */
+.project-card,
+.project-card-more,
+.team-card,
+.testimonial-slide {
+    background-color: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove specific color classes overrides */
+.project-card.green,
+.project-card.grey,
+.project-card.orange {
+    background-color: var(--glass-bg) !important;
+}
+
+.project-card:hover,
+.project-card-more:hover,
+.team-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--glass-highlight);
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+.project-name {
+    color: var(--text-primary) !important;
+    font-weight: 600;
+}
+
+.lightgreen {
+    color: var(--text-secondary) !important;
+}
+
+/* Testimonials */
+.testimonial-slider-large.white_background {
+    background-color: transparent !important;
+}
+
+.testimonial-quote {
+    color: var(--text-primary) !important;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Philosophy Section */
+.hero-subscribe-left {
+    background-color: transparent !important;
+}
+
+.team-member-name {
+    color: var(--text-primary) !important;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.cc-contact {
+    background-color: transparent !important;
+}
+
+.contact {
+    background-color: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border);
+    border-radius: 32px;
+    padding: 60px;
+    backdrop-filter: blur(10px);
+}
+
+/* Footer */
+.footer-wrap {
+    border-top: 1px solid var(--glass-border);
+    background-color: transparent !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.webflow-link {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.webflow-link:hover {
+    opacity: 1;
+}
+
+/* Logos */
+.clients-image-three,
+.grid-3 img {
+    filter: brightness(0) invert(1) opacity(0.7);
+    transition: opacity 0.3s;
+}
+
+.clients-image-three:hover,
+.grid-3 img:hover {
+    opacity: 1;
+}
+
+/* Tabs */
+.tab-link-tab-1-2,
+.tab-link-tab-2 {
+    background-color: transparent !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 99px;
+    margin-right: 10px;
+    color: var(--text-secondary) !important;
+}
+
+.w-tab-link.w--current {
+    background-color: var(--glass-highlight) !important;
+    color: var(--text-primary) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Images */
+img {
+    border-radius: 12px;
+}
+
+.me {
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dividers */
+.divide,
+.image {
+    opacity: 0.1;
+    filter: invert(1);
+}
+/* ========================================
+   ACCESSIBILITY FIXES FOR ALL PAGES
+   ======================================== */
+
+/* Project/Case Study Sections */
+.project-section {
+    background-color: transparent !important;
+}
+
+/* Headings - Ensure high contrast */
+.project-section-heading,
+.heading,
+.heading-5,
+.heading-8,
+.heading-9,
+.heading-10,
+.heading-12,
+.heading-13 {
+    color: var(--text-primary) !important;
+}
+
+/* Subheadings */
+.project-section-sub-heading {
+    color: var(--text-secondary) !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Paragraph text */
+.paragraph-light,
+.paragraph-light-2 {
+    color: var(--text-secondary) !important;
+    line-height: 1.8;
+}
+
+/* White text variants - keep white for dark backgrounds */
+.white,
+.heading.white,
+.heading-5.white,
+.heading-13.white,
+.paragraph-light.white,
+.paragraph-light-2.white {
+    color: var(--text-primary) !important;
+}
+
+/* Image containers */
+.project-image-block,
+.project-image-block-2-image,
+.detail-header-image {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Grid layouts */
+.project-description-grid,
+.project-description {
+    gap: 40px;
+}
+
+/* Ensure all sections have proper spacing */
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Container backgrounds */
+.container,
+.container-2 {
+    background-color: transparent !important;
+}
+
+/* Back button styling */
+.button.w-inline-block {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.3s ease;
+}
+
+.button.w-inline-block:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Lists */
+ul, ol {
+    color: var(--text-secondary);
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+/* Links */
+a:not(.button):not(.w-inline-block) {
+    color: #a0c4ff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:not(.button):not(.w-inline-block):hover {
+    color: #c4b5fd;
+}
+
+/* Form elements */
+.text-field,
+.w-input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: var(--text-primary) !important;
+}
+
+.text-field:focus,
+.w-input:focus {
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Lightbox links */
+.lightbox-link {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.lightbox-link:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+/* Marketplace list */
+.marketplace-list {
+    list-style: none;
+    padding: 0;
+}
+
+.marketplace-list li {
+    margin-bottom: 8px;
+}
+
+.marketplace-list a {
+    color: var(--text-secondary) !important;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.marketplace-list a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary) !important;
+}
+
+/* Project header template */
+.project_header_template {
+    background-color: transparent !important;
+}
+
+/* Columns */
+.columns-5,
+.columns-7,
+.w-row {
+    background-color: transparent !important;
+}
+
+/* Column items */
+.column-2,
+.column-3,
+.column-5,
+.column-6,
+.w-col {
+    background-color: transparent !important;
+}
+
+/* Ensure proper text rendering */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
