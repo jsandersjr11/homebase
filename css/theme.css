@@ -334,6 +334,7 @@ img {
     opacity: 0.1;
     filter: invert(1);
 }
+
 /* ========================================
    ACCESSIBILITY FIXES FOR ALL PAGES
    ======================================== */
@@ -418,7 +419,8 @@ img {
 }
 
 /* Lists */
-ul, ol {
+ul,
+ol {
     color: var(--text-secondary);
 }
 
@@ -509,4 +511,244 @@ a:not(.button):not(.w-inline-block):hover {
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE FIXES
+   ======================================== */
+
+/* Tablet and below (max-width: 991px) */
+@media screen and (max-width: 991px) {
+    .banner {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .heading-jumbo-home {
+        font-size: 3.5rem;
+        line-height: 1.1;
+    }
+
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contact {
+        padding: 40px;
+    }
+}
+
+/* Mobile landscape and below (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .banner {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .heading-jumbo-home {
+        font-size: 2.8rem;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+    }
+
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contact {
+        padding: 30px;
+        border-radius: 24px;
+    }
+
+    /* Reduce project card spacing */
+    .project-card,
+    .team-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile portrait (max-width: 479px) */
+@media screen and (max-width: 479px) {
+
+    /* Prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Hero Section - Fix text overflow */
+    .banner {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .heading-jumbo-home {
+        font-size: 2.5rem !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.8rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .heading-jumbo-home.white {
+        font-size: 2.5rem !important;
+    }
+
+    /* Reduce section spacing significantly */
+    .section {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    /* Projects section specific */
+    .projects {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    /* Container padding */
+    .container,
+    .container-2 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Buttons - Better mobile sizing */
+    .button,
+    .button-primary,
+    .w-button {
+        padding: 12px 28px !important;
+        font-size: 0.95rem !important;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Contact form */
+    .contact {
+        padding: 24px !important;
+        border-radius: 20px;
+    }
+
+    /* Reduce card spacing */
+    .project-card,
+    .team-card,
+    .testimonial-slide {
+        margin-bottom: 16px;
+        padding: 20px;
+    }
+
+    /* Typography adjustments */
+    h1,
+    .heading-h1 {
+        font-size: 2rem !important;
+    }
+
+    h2,
+    .heading-5 {
+        font-size: 1.75rem !important;
+    }
+
+    h3,
+    .heading-8,
+    .heading-9 {
+        font-size: 1.5rem !important;
+    }
+
+    h4,
+    .heading-10 {
+        font-size: 1.25rem !important;
+    }
+
+    /* Project section headings */
+    .project-section-heading {
+        font-size: 1.75rem !important;
+        margin-bottom: 1rem;
+    }
+
+    /* Reduce grid gaps */
+    .project-description-grid,
+    .project-description {
+        gap: 24px !important;
+    }
+
+    /* Footer */
+    .footer-wrap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* Navigation adjustments */
+    .navigation {
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Testimonials - reduce spacing */
+    .testimonial-slider-large {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .testimonial-quote {
+        font-size: 1rem !important;
+    }
+
+    /* Philosophy section */
+    .hero-subscribe-left {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* Images - ensure they don't overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Form fields */
+    .text-field,
+    .w-input {
+        font-size: 16px !important;
+        /* Prevents zoom on iOS */
+        padding: 12px !important;
+    }
+
+    /* Reduce whitespace in specific sections */
+    .div-block-6,
+    .div-block-7,
+    .div-block-8 {
+        margin-bottom: 20px;
+    }
+
+    /* Client logos grid */
+    .grid-3 {
+        gap: 16px;
+    }
+}
+
+/* Extra small devices (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .heading-jumbo-home {
+        font-size: 2rem !important;
+    }
+
+    .banner {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .section {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .contact {
+        padding: 20px !important;
+    }
 }
