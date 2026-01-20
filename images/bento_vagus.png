@@ -1,0 +1,52 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bentoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f1e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow1">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0" />
+    </radialGradient>
+    <radialGradient id="glow2">
+      <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#7b68ee;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bentoBg)"/>
+  
+  <!-- Glowing orbs -->
+  <circle cx="300" cy="200" r="150" fill="url(#glow1)"/>
+  <circle cx="900" cy="600" r="180" fill="url(#glow2)"/>
+  
+  <!-- Phone mockup -->
+  <rect x="450" y="150" width="300" height="500" rx="30" fill="#0a0a1a" opacity="0.8"/>
+  <rect x="465" y="165" width="270" height="470" rx="25" fill="#1a1a2e"/>
+  
+  <!-- Screen content -->
+  <rect x="475" y="185" width="250" height="430" rx="20" fill="#0f0f1e"/>
+  
+  <!-- Breathing circle animation -->
+  <circle cx="600" cy="350" r="100" fill="none" stroke="#4a90e2" stroke-width="2" opacity="0.3"/>
+  <circle cx="600" cy="350" r="80" fill="none" stroke="#7b68ee" stroke-width="2" opacity="0.5"/>
+  <circle cx="600" cy="350" r="60" fill="none" stroke="#4a90e2" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Center pulse -->
+  <circle cx="600" cy="350" r="10" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Waveform at bottom -->
+  <path d="M 480 550 Q 520 530, 560 550 T 640 550 T 720 550" 
+        fill="none" stroke="#4a90e2" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Stats -->
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="14" fill="#a0a0c0" text-anchor="middle">HRV</text>
+  <text x="600" y="505" font-family="Arial, sans-serif" font-size="24" fill="#4a90e2" text-anchor="middle" font-weight="bold">58ms</text>
+  
+  <!-- Floating elements -->
+  <circle cx="200" cy="400" r="8" fill="#4a90e2" opacity="0.6"/>
+  <circle cx="1000" cy="300" r="6" fill="#7b68ee" opacity="0.5"/>
+  <circle cx="150" cy="600" r="10" fill="#4a90e2" opacity="0.4"/>
+</svg>

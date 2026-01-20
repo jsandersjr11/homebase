@@ -1,0 +1,36 @@
+<svg width="1440" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#7b68ee;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1440" height="900" fill="url(#bgGradient)"/>
+  
+  <!-- Breathing Circle Animation -->
+  <circle cx="720" cy="450" r="200" fill="none" stroke="url(#pulseGradient)" stroke-width="3" opacity="0.4"/>
+  <circle cx="720" cy="450" r="160" fill="none" stroke="#7b68ee" stroke-width="2" opacity="0.6"/>
+  <circle cx="720" cy="450" r="120" fill="none" stroke="#4a90e2" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Center Dot -->
+  <circle cx="720" cy="450" r="8" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Waveform -->
+  <path d="M 200 450 Q 300 350, 400 450 T 600 450 T 800 450 T 1000 450 T 1200 450" 
+        fill="none" stroke="#4a90e2" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Text -->
+  <text x="720" y="680" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="300">
+    Vagus
+  </text>
+  <text x="720" y="730" font-family="Arial, sans-serif" font-size="24" fill="#a0a0c0" text-anchor="middle">
+    Neuro-Adaptive Wellness
+  </text>
+</svg>

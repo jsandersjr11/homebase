@@ -1,0 +1,39 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="moonGlow">
+      <stop offset="0%" style="stop-color:#7b68ee;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#nightBg)"/>
+  
+  <!-- Phone on Nightstand -->
+  <rect x="250" y="200" width="300" height="20" rx="5" fill="#2a2a3e" opacity="0.6"/>
+  
+  <!-- Phone Frame -->
+  <rect x="250" y="150" width="300" height="50" rx="30" fill="#1a1a2e"/>
+  <rect x="260" y="155" width="280" height="40" rx="25" fill="#0a0a1a"/>
+  
+  <!-- Breathing Wave -->
+  <path d="M 100 350 Q 200 300, 300 350 T 500 350 T 700 350" 
+        fill="none" stroke="#7b68ee" stroke-width="2" opacity="0.6"/>
+  <path d="M 100 380 Q 200 330, 300 380 T 500 380 T 700 380" 
+        fill="none" stroke="#4a90e2" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Moon/Sleep Icon -->
+  <circle cx="400" cy="450" r="60" fill="url(#moonGlow)"/>
+  <circle cx="400" cy="450" r="40" fill="none" stroke="#7b68ee" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Sleep Metrics -->
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="14" fill="#a0a0c0" text-anchor="middle">Respiration Rate</text>
+  <text x="400" y="565" font-family="Arial, sans-serif" font-size="20" fill="#7b68ee" text-anchor="middle" font-weight="300">12 bpm</text>
+  
+  <!-- Label -->
+  <text x="400" y="590" font-family="Arial, sans-serif" font-size="16" fill="#a0a0c0" text-anchor="middle" font-weight="300">Night Mode - Sleep Sentinel</text>
+</svg>
