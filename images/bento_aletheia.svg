@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1f1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)" />
+  
+  <!-- Abstract Waveform Visualizing Voice -->
+  <g transform="translate(400, 300)" opacity="0.8">
+    <path d="M-300,0 Q-150,-100 0,0 T300,0" fill="none" stroke="#d4a574" stroke-width="4" opacity="0.3">
+      <animate attributeName="d" 
+        values="M-300,0 Q-150,-100 0,0 T300,0; M-300,0 Q-150,100 0,0 T300,0; M-300,0 Q-150,-100 0,0 T300,0" 
+        dur="5s" repeatCount="indefinite" />
+    </path>
+    <path d="M-300,0 Q-150,-60 0,0 T300,0" fill="none" stroke="#d4a574" stroke-width="6" opacity="0.5">
+      <animate attributeName="d" 
+        values="M-300,0 Q-150,-60 0,0 T300,0; M-300,0 Q-150,60 0,0 T300,0; M-300,0 Q-150,-60 0,0 T300,0" 
+        dur="4s" repeatCount="indefinite" />
+    </path>
+    <path d="M-300,0 Q-150,-30 0,0 T300,0" fill="none" stroke="#d4a574" stroke-width="8" opacity="0.8">
+      <animate attributeName="d" 
+        values="M-300,0 Q-150,-30 0,0 T300,0; M-300,0 Q-150,30 0,0 T300,0; M-300,0 Q-150,-30 0,0 T300,0" 
+        dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Central Element: The "Digital Oracle" -->
+  <circle cx="400" cy="300" r="60" fill="none" stroke="#d4a574" stroke-width="2" opacity="0.6" />
+  <circle cx="400" cy="300" r="50" fill="none" stroke="#d4a574" stroke-width="1" opacity="0.4" />
+  
+  <!-- Connecting nodes representing family tree/connections -->
+  <circle cx="250" cy="200" r="6" fill="#d4a574" opacity="0.6" />
+  <circle cx="550" cy="200" r="6" fill="#d4a574" opacity="0.6" />
+  <circle cx="250" cy="400" r="6" fill="#d4a574" opacity="0.6" />
+  <circle cx="550" cy="400" r="6" fill="#d4a574" opacity="0.6" />
+  
+  <!-- Lines connecting nodes to center -->
+  <line x1="250" y1="200" x2="400" y2="300" stroke="#d4a574" stroke-width="1" opacity="0.2" />
+  <line x1="550" y1="200" x2="400" y2="300" stroke="#d4a574" stroke-width="1" opacity="0.2" />
+  <line x1="250" y1="400" x2="400" y2="300" stroke="#d4a574" stroke-width="1" opacity="0.2" />
+  <line x1="550" y1="400" x2="400" y2="300" stroke="#d4a574" stroke-width="1" opacity="0.2" />
+
+</svg>

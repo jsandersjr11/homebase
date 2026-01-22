@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg-dual" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <marker id="arrow-right" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6366f1" />
+    </marker>
+    <marker id="arrow-left" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M9,0 L9,6 L0,3 z" fill="#d4a574" />
+    </marker>
+    <marker id="arrow-right-gold" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d4a574" />
+    </marker>
+    <marker id="arrow-right-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6366f1" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-dual)" />
+
+  <!-- Central AI Core -->
+  <g transform="translate(400, 250)">
+    <circle r="70" fill="#fff" stroke="#d4a574" stroke-width="3" />
+    <circle r="55" fill="none" stroke="#d4a574" stroke-width="1" stroke-dasharray="5,5" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite" />
+    </circle>
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="16" fill="#333" text-anchor="middle" font-weight="bold">ALETHEIA</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">AI Protocol</text>
+  </g>
+
+  <!-- Left Side: Subject (Elderly) -->
+  <g transform="translate(150, 250)">
+    <circle r="90" fill="#fff" stroke="#d4a574" stroke-width="2" />
+    
+    <!-- Phone Icon -->
+    <g transform="translate(0, -15)">
+      <rect x="-20" y="-25" width="40" height="50" rx="5" fill="none" stroke="#d4a574" stroke-width="3" />
+      <circle cx="0" cy="30" r="4" fill="#d4a574" />
+      <line x1="-10" y1="-15" x2="10" y2="-15" stroke="#d4a574" stroke-width="2" />
+    </g>
+    
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">THE SUBJECT</text>
+    <text x="0" y="90" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">Storyteller</text>
+    <text x="0" y="110" font-family="Arial, sans-serif" font-size="11" fill="#999" text-anchor="middle">Voice Interface</text>
+    <text x="0" y="125" font-family="Arial, sans-serif" font-size="11" fill="#999" text-anchor="middle">Zero Friction</text>
+  </g>
+
+  <!-- Right Side: Producer (Younger) -->
+  <g transform="translate(650, 250)">
+    <circle r="90" fill="#fff" stroke="#6366f1" stroke-width="2" />
+    
+    <!-- Mobile App Icon -->
+    <g transform="translate(0, -15)">
+      <rect x="-18" y="-30" width="36" height="60" rx="4" fill="none" stroke="#6366f1" stroke-width="3" />
+      <rect x="-12" y="-22" width="24" height="35" fill="#6366f1" opacity="0.1" />
+      <line x1="-8" y1="35" x2="8" y2="35" stroke="#6366f1" stroke-width="2" />
+    </g>
+    
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">THE PRODUCER</text>
+    <text x="0" y="90" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">Memory Keeper</text>
+    <text x="0" y="110" font-family="Arial, sans-serif" font-size="11" fill="#999" text-anchor="middle">App Interface</text>
+    <text x="0" y="125" font-family="Arial, sans-serif" font-size="11" fill="#999" text-anchor="middle">Full Control</text>
+  </g>
+
+  <!-- Data Flow Lines -->
+  
+  <!-- Producer to AI (top) -->
+  <path d="M560,250 L470,250" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrow-right)" opacity="0.8">
+    <animate attributeName="stroke-dashoffset" from="12" to="0" dur="1.5s" repeatCount="indefinite" />
+  </path>
+  <text x="515" y="235" font-family="Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="500">Context & Questions</text>
+
+  <!-- AI to Subject (top) -->
+  <path d="M330,250 L240,250" stroke="#d4a574" stroke-width="2.5" marker-end="url(#arrow-left)" opacity="0.8" />
+  <text x="285" y="235" font-family="Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="500">Natural Conversation</text>
+
+  <!-- Subject to AI (bottom) -->
+  <path d="M240,270 L330,270" stroke="#d4a574" stroke-width="2.5" stroke-dasharray="4,3" marker-end="url(#arrow-right-gold)" opacity="0.8" />
+  <text x="285" y="290" font-family="Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="500">Stories & Voice</text>
+
+  <!-- AI to Producer (bottom) -->
+  <path d="M470,270 L560,270" stroke="#6366f1" stroke-width="2.5" marker-end="url(#arrow-right-purple)" opacity="0.8" />
+  <text x="515" y="290" font-family="Arial, sans-serif" font-size="11" fill="#555" text-anchor="middle" font-weight="500">Processed Memories</text>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">Dual-User Experience Model</text>
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="13" fill="#666" text-anchor="middle">Bridging Generations Through AI</text>
+
+</svg>

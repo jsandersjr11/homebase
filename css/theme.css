@@ -1063,6 +1063,7 @@ a:not(.button):not(.w-inline-block):hover {
 /* Project Specific Backgrounds */
 .project-vagus { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
 .project-boomerang { background: linear-gradient(135deg, #1a2e22, #000); }
+.project-aletheia  { background: linear-gradient(135deg, #2d1f1a, #000); }
 .project-coaching  { background: linear-gradient(135deg, #1e1b4b, #000); }
 .project-treatment { background: linear-gradient(135deg, #0f3d35, #000); }
 .project-practice  { background: linear-gradient(135deg, #431f0f, #000); }

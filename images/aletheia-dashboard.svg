@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <filter id="dropShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f5f5f7" />
+  
+  <!-- Dashboard Interface Container -->
+  <rect x="100" y="50" width="600" height="500" rx="10" fill="#ffffff" filter="url(#dropShadow)" />
+  
+  <!-- Sidebar -->
+  <rect x="100" y="50" width="120" height="500" rx="10" fill="#1e1b4b" />
+  <rect x="100" y="50" width="120" height="500" rx="0" fill="#1e1b4b" clip-path="inset(0 0 0 10)" /> <!-- Square off right side -->
+  
+  <!-- Sidebar Items -->
+  <circle cx="160" cy="100" r="20" fill="#ffffff" opacity="0.2" />
+  <rect x="120" y="150" width="80" height="10" rx="5" fill="#ffffff" opacity="0.6" />
+  <rect x="120" y="180" width="80" height="10" rx="5" fill="#ffffff" opacity="0.3" />
+  <rect x="120" y="210" width="80" height="10" rx="5" fill="#ffffff" opacity="0.3" />
+  <rect x="120" y="240" width="80" height="10" rx="5" fill="#ffffff" opacity="0.3" />
+  
+  <!-- Main Content Area -->
+  
+  <!-- Header -->
+  <text x="250" y="90" font-family="Arial, sans-serif" font-size="24" fill="#333" font-weight="bold">Grandma's History</text>
+  <rect x="620" y="70" width="60" height="30" rx="15" fill="#d4a574" />
+  <text x="650" y="90" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle">ACTIVE</text>
+
+  <!-- Stats Cards -->
+  <rect x="250" y="130" width="130" height="80" rx="8" fill="#f0f0f5" />
+  <text x="270" y="155" font-family="Arial, sans-serif" font-size="12" fill="#666">Stories Captured</text>
+  <text x="270" y="190" font-family="Arial, sans-serif" font-size="24" fill="#1e1b4b" font-weight="bold">42</text>
+  
+  <rect x="400" y="130" width="130" height="80" rx="8" fill="#f0f0f5" />
+  <text x="420" y="155" font-family="Arial, sans-serif" font-size="12" fill="#666">Hours Recorded</text>
+  <text x="420" y="190" font-family="Arial, sans-serif" font-size="24" fill="#1e1b4b" font-weight="bold">12.5</text>
+  
+  <rect x="550" y="130" width="130" height="80" rx="8" fill="#f0f0f5" />
+  <text x="570" y="155" font-family="Arial, sans-serif" font-size="12" fill="#666">Verification Level</text>
+  <text x="570" y="190" font-family="Arial, sans-serif" font-size="24" fill="#2d1f1a" font-weight="bold">85%</text>
+
+  <!-- Timeline / Stories Section -->
+  <text x="250" y="250" font-family="Arial, sans-serif" font-size="16" fill="#333" font-weight="bold">Recent Conversations</text>
+  
+  <!-- Story Item 1 -->
+  <line x1="250" y1="270" x2="680" y2="270" stroke="#eee" stroke-width="1" />
+  <rect x="250" y="290" width="40" height="40" rx="5" fill="#e0e0e0" />
+  <text x="310" y="305" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">The 1968 Detroit Move</text>
+  <text x="310" y="325" font-family="Arial, sans-serif" font-size="12" fill="#666">Verified against Census Records</text>
+  <rect x="600" y="295" width="80" height="25" rx="4" fill="#e8f5e9" />
+  <text x="640" y="312" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32" text-anchor="middle">VERIFIED</text>
+  
+  <!-- Story Item 2 -->
+  <line x1="250" y1="350" x2="680" y2="350" stroke="#eee" stroke-width="1" />
+  <rect x="250" y="370" width="40" height="40" rx="5" fill="#e0e0e0" />
+  <text x="310" y="385" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">Meeting Grandpa</text>
+  <text x="310" y="405" font-family="Arial, sans-serif" font-size="12" fill="#666">Personal Testimony • Emotional</text>
+  <rect x="600" y="375" width="80" height="25" rx="4" fill="#e3f2fd" />
+  <text x="640" y="392" font-family="Arial, sans-serif" font-size="10" fill="#1565c0" text-anchor="middle">TESTIMONY</text>
+  
+  <!-- Story Item 3 -->
+  <line x1="250" y="430" x2="680" y2="430" stroke="#eee" stroke-width="1" />
+  <rect x="250" y="450" width="40" height="40" rx="5" fill="#e0e0e0" />
+  <text x="310" y="465" font-family="Arial, sans-serif" font-size="14" fill="#333" font-weight="bold">The Red Chevy</text>
+  <text x="310" y="485" font-family="Arial, sans-serif" font-size="12" fill="#666">Family Myth • Conflicting Dates</text>
+  <rect x="600" y="455" width="80" height="25" rx="4" fill="#fff3e0" />
+  <text x="640" y="472" font-family="Arial, sans-serif" font-size="10" fill="#e65100" text-anchor="middle">CONFLICT</text>
+
+</svg>
